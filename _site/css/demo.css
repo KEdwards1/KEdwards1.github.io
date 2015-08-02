@@ -163,17 +163,12 @@ a:hover {
 	content: "\e004";
 }
 
-.user-description{
-	float:left;
-	border: solid black 3px;
-	min-height: 600px;
-	width: 250px;
-	margin-left: 15px;
-	margin-top: 50px;
-	padding-right: 10px;
-	position: absolute;
-	display:none;
-}
+
+.attribution {
+		font-size: 10px;
+		position: absolute;
+		bottom: 0;
+	}
 
 @media screen and (max-width: 55em) {
 
@@ -193,5 +188,10 @@ a:hover {
 
 	.container > header > span {
 		text-indent: 30px;
+	}
+	.attribution {
+		font-size: 10px;
+		position: absolute;
+		bottom: 0;
 	}
 }

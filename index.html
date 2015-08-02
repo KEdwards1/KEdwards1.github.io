@@ -2,6 +2,11 @@
 layout: default
 ---
 	<div class="user-description">
+	<h1>Karlyce Edwards</h1>
+	<ul>
+		<li>Back-End Web Developer</li>
+		<li>New York, NY</li>
+	</ul>
 	</div>
 <div class="container">
 	<header class="clearfix">
@@ -32,7 +37,7 @@ layout: default
 		<li>
 			<figure>
 				<a href="{{ post.github }}"><img src="{{ site.url }}/img/large/{{ post.photo }}" alt="img"/></a>
-				<figcaption><h3><a class="fa fa-github-alt" href="{{ post.github }}">{{ post.caption_header }}</a></h3><p>{{ post.description }}</p></figcaption>
+				<figcaption class="fa fa-github-alt"><h3><a href="{{ post.github }}">{{ post.caption_header }}</a></h3><p>{{ post.description }}</p></figcaption>
 			</figure>
 		</li>
 		{% endfor %}
@@ -47,3 +52,4 @@ layout: default
 
 	</div><!-- // grid-gallery -->
 </div>
+	<p class="attribution">Theme based on the <a href="https://github.com/nadjetey/GridGallery">Grid Gallery</a> Jekyll theme by Nii Adjetey Sowah</p>
