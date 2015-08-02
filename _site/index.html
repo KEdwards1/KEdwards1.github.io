@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <meta name="description" content="Projects" />
+    <meta name="keywords" content="jekyll, image gallery, image grid, template, masonry" />
+    <meta name="author" content="" />
+
+    <link rel="stylesheet" type="text/css" href="/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/component.css" />
+    <script src="/js/modernizr.custom.js"></script>
+  </head>
+  <body>
+
+  	<div class="user-description">
+	</div>
+<div class="container">
+	<header class="clearfix">
+		<h1>Projects</h1>
+	</header>
+	<div id="grid-gallery" class="grid-gallery">
+
+	<section class="grid-wrap">
+	<ul class="grid">
+		<li class="grid-sizer"></li><!-- for Masonry column width -->
+		
+		<li>
+			<figure>
+				<img src="/img/thumb/yafa.png" alt="img"/>
+				<figcaption>
+					<h3>Yafa</h3>
+					<p>A Ruby tool to help learn a language</p>
+				</figcaption>
+			</figure>
+		</li>
+		
+		<li>
+			<figure>
+				<img src="/img/thumb/wiki.png" alt="img"/>
+				<figcaption>
+					<h3>Wiki</h3>
+					<p>A simple wiki using Sinatra</p>
+				</figcaption>
+			</figure>
+		</li>
+		
+		<li>
+			<figure>
+				<img src="/img/thumb/simon.png" alt="img"/>
+				<figcaption>
+					<h3>Simon</h3>
+					<p>A re-creation of the children's game Simon using Javascript and JQuery</p>
+				</figcaption>
+			</figure>
+		</li>
+		
+	</ul>
+	</section><!-- // grid-wrap -->
+
+	<section class="slideshow">
+	<ul>
+		
+		<li>
+			<figure>
+				<a href="https://github.com/KEdwards1/yafa"><img src="/img/large/yafa.png" alt="img"/></a>
+				<figcaption><h3><a class="fa fa-github-alt" href="https://github.com/KEdwards1/yafa">Yafa</a></h3><p>Used the Ruby framework to create an app to help language learners gather materials in their target language and review vocabulary. Used the Redcarpet gem to format text and the Paperclip gem to allow video, pdf, and audio uploads. Also created an interactive matching game using HTML, CSS and the JQuery and JQuery UI JavaScript libraries</p></figcaption>
+			</figure>
+		</li>
+		
+		<li>
+			<figure>
+				<a href="https://github.com/KEdwards1/wiki"><img src="/img/large/wiki.png" alt="img"/></a>
+				<figcaption><h3><a class="fa fa-github-alt" href="https://github.com/KEdwards1/wiki">Wiki</a></h3><p>Used the Sinatra framework to create a CMS for a fictional bakery that allows the creation of articles with tagging and categorization. Combined Bcrypt and Sinatra's session feature to allow user authentication and implemented an email notifcation system for page edits using the SendGrid service and the associated SendGrid Ruby gem. Also implemented text formatting using the Redcarpet ruby gem.</p></figcaption>
+			</figure>
+		</li>
+		
+		<li>
+			<figure>
+				<a href="https://github.com/KEdwards1/simon"><img src="/img/large/simon.png" alt="img"/></a>
+				<figcaption><h3><a class="fa fa-github-alt" href="https://github.com/KEdwards1/simon">Simon</a></h3><p>Used HTML, CSS, and the JQuery JavaScript library to re-create the classic children's game Simon. Also made use of the HTML 5 audio API to proivde audio feedback.</p></figcaption>
+			</figure>
+		</li>
+		
+	</ul>
+	<nav>
+		<span class="icon nav-prev"></span>
+		<span class="icon nav-next"></span>
+		<span class="icon nav-close"></span>
+	</nav>
+	<div class="info-keys icon">Navigate with arrow keys</div>
+	</section><!-- // slideshow -->
+
+	</div><!-- // grid-gallery -->
+</div>
+
+    <script src="/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/masonry.pkgd.min.js"></script>
+    <script src="/js/classie.js"></script>
+    <script src="/js/cbpGridGallery.js"></script>
+    <script>
+      new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+    </script>
+  </body>
+</html>

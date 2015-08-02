@@ -1,0 +1,9 @@
+---
+layout: default
+date:   2015-08-01 23:26:12
+photo: simon.png
+caption_header: Simon
+caption: A re-creation of the children's game Simon using Javascript and JQuery
+github: https://github.com/KEdwards1/simon
+description: Used HTML, CSS, and the JQuery JavaScript library to re-create the classic children's game Simon. Also made use of the HTML 5 audio API to proivde audio feedback.
+---

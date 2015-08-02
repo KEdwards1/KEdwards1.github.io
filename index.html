@@ -1,43 +1,49 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>K Edwards</title>
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-
-	<header>
-		<h1 id="name-headline">Karlyce Edwards</h1>
-		<br>
-			<div id="social-links">
-					<a href="https://github.com/KEdwards1" target="_blank"><span class="fa fa-2x fa-github"></span></a>
-					<a href="https://www.linkedin.com/profile/view?id=150687459" target="_blank"><span class="fa fa-2x fa-linkedin"></span></a>
-			</div>
-				
+---
+layout: default
+---
+	<div class="user-description">
+	</div>
+<div class="container">
+	<header class="clearfix">
+		<h1>{{ site.name }}</h1>
 	</header>
-	<div style="clear:both"></div>
-	<main>
-		<h2>About Me</h2>
-		<p>
-			Hello I'm Karlyce. I'm a native New Yorker and I love video games. Before GA I was a technology coordinator at a graduate school.
-		</p>
-		<p>
-			I came to GA because the experience of helping build a MOOC made inspired me to move from supporting user applications to building them.
-		</p>
-		<p>
-			One of the major things that appeals to me about web development is the challenge of turning code into something useable by others. My goal with attending the WDI program is not only to work on software inside of an organization, but to also create my own web applications.
-		</p>
-		<p>
-			According to <a href="http://www.buzzfeed.com/geico/what-animal-were-you-born-to-be" target="_blank">Buzzfeed,</a> my spirit animal is a sloth.
-		</p>
-	</main>
+	<div id="grid-gallery" class="grid-gallery">
 
-	<footer>
-		<p>photo credit: <a href="http://www.flickr.com/photos/38383073@N05/6770273281">Gold Autumn Bokeh</a> via <a href="http://photopin.com">photopin</a> <a href="https://creativecommons.org/licenses/by/2.0/">(license)</a></p>
-	</footer>
+	<section class="grid-wrap">
+	<ul class="grid">
+		<li class="grid-sizer"></li><!-- for Masonry column width -->
+		{% for post in site.posts %}
+		<li>
+			<figure>
+				<img src="{{ site.url }}/img/thumb/{{ post.photo }}" alt="img"/>
+				<figcaption>
+					<h3>{{ post.caption_header}}</h3>
+					<p>{{ post.caption }}</p>
+				</figcaption>
+			</figure>
+		</li>
+		{% endfor %}
+	</ul>
+	</section><!-- // grid-wrap -->
 
-</body>
-</html>
+	<section class="slideshow">
+	<ul>
+		{% for post in site.posts %}
+		<li>
+			<figure>
+				<a href="{{ post.github }}"><img src="{{ site.url }}/img/large/{{ post.photo }}" alt="img"/></a>
+				<figcaption><h3><a class="fa fa-github-alt" href="{{ post.github }}">{{ post.caption_header }}</a></h3><p>{{ post.description }}</p></figcaption>
+			</figure>
+		</li>
+		{% endfor %}
+	</ul>
+	<nav>
+		<span class="icon nav-prev"></span>
+		<span class="icon nav-next"></span>
+		<span class="icon nav-close"></span>
+	</nav>
+	<div class="info-keys icon">Navigate with arrow keys</div>
+	</section><!-- // slideshow -->
+
+	</div><!-- // grid-gallery -->
+</div>

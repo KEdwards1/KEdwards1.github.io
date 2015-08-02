@@ -1,0 +1,8 @@
+name: Projects
+markdown: redcarpet
+pygments: true
+permalink: /:year/:month/:title/
+url: #http://kedwards1.github.io/
+author:
+    name: KEdwards
+    twitter: #
