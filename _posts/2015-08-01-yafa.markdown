@@ -5,5 +5,5 @@ photo: yafa.png
 caption_header: Yafa
 caption: A Ruby tool to help learn a language
 github: https://github.com/KEdwards1/yafa
-description: Used the Ruby framework to create an app to help language learners gather materials in their target language and review vocabulary. Used the Redcarpet gem to format text and the Paperclip gem to allow video, pdf, and audio uploads. Also created an interactive matching game using HTML, CSS and the JQuery and JQuery UI JavaScript libraries
+description: For this project I used the Ruby on Rails framework to create an app for language learners. Yafa allows users to upload video, pdf, and audio files which I implemented using the Paperclip gem for file modeling and Dropbox for file storage. I also used the Redcarpet gem to provide text formatting. In addition to uploading documents, users can also create lists of vocabulary words and review these lists in a matching game. The mactching game is implemented using HTML, CSS and the JQuery and JQuery UI JavaScript libraries. Scoring data is collected via Ajax calls and populates a scoring dashboard.
 ---
