@@ -126,12 +126,12 @@ a h2:hover {
 	.bio {
 		float:left;
 		height: 100%;
-		min-width: 29.25%;
+		min-width: 29%;
 		display: inline-block;
 	}
 	.projects {
 		float: right;
-		min-width: 70.6%;
+		min-width: 70%;
 		height: 100%;
 		overflow: none;
 	}
