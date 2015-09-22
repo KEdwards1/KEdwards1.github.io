@@ -1,9 +1,0 @@
----
-layout: default
-date:   2015-08-01 23:26:12
-photo: wiki.png
-caption_header: Wiki
-caption: A simple wiki using Sinatra
-github: https://github.com/KEdwards1/wiki
-description: I used the Sinatra framework to create a CMS for a fictional bakery that allows the creation of articles with tagging and categorization. I combined Bcrypt and Sinatra's session feature to allow user authentication, and also implemented an email notifcation system for page edits using the SendGrid service and the associated SendGrid Ruby gem. Wiki supports markdown formatting via the RedCarpet gem.
----

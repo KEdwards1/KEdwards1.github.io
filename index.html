@@ -1,55 +1,75 @@
----
-layout: default
----
-	<div class="user-description">
-	<h1>Karlyce Edwards</h1>
-	<ul>
-		<li>Back-End Web Developer</li>
-		<li>New York, NY</li>
-	</ul>
-	</div>
-<div class="container">
-	<header class="clearfix">
-		<h1>{{ site.name }}</h1>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="bio">
+		<div class="bio-text">
+			<h1>Karlyce Edwards</h1>
+				<p>Fullstack Web Developer/ Technologist</p>
+				<a href="https://www.linkedin.com/in/karlyceedwards" class="fa fa-linkedin-square fa-3x"></a>
+				<a href="https://github.com/KEdwards1" class="fa fa-github fa-3x"></span></a>
+		</div>
 	</header>
-	<div id="grid-gallery" class="grid-gallery">
+	
+	<section class="projects">
+		<h1>Projects</h1>
+		<div class="project-description">
+			<a href="http://tourism-.herokuapp.com">
+				<h2>Tourism</h2>
+			</a>
+			<div class="project-image">
+				<a href="http://tourism-.herokuapp.com"><img src="img/tourism_screenshot.png"></a>
+			</div>
+			<div class="project-explanation">
+				<p>Built on the Sinatra framework with an Angular.js front-end, Tourism leverages the Songkick and Spotify APIs to allow users to view a visual history of their favourite artist's tour history. Users can also save the setlist for each performance to their Spotify account.</p>
+			</div>
+		</div>
 
-	<section class="grid-wrap">
-	<ul class="grid">
-		<li class="grid-sizer"></li><!-- for Masonry column width -->
-		{% for post in site.posts %}
-		<li>
-			<figure>
-				<img src="{{ site.url }}/img/thumb/{{ post.photo }}" alt="img"/>
-				<figcaption>
-					<h3>{{ post.caption_header}}</h3>
-					<p>{{ post.caption }}</p>
-				</figcaption>
-			</figure>
-		</li>
-		{% endfor %}
-	</ul>
-	</section><!-- // grid-wrap -->
+		<div class="project-description">
+			<a href="http://yafa.herokuapp.com">
+				<h2>Yafa</h2>
+			</a>
+			<div class="project-image">
+				<a href="http://yafa.herokuapp.com"><img src="img/yafa_screenshot.png"></a>
+			</div>
+			<div class="project-explanation">
+				<p>Built on the Ruby on Rails framework, Yafa is a web app to help language learners collect materials in their L2 and drill vocabulary. Yafa allows users to upload video, pdf, and audio files and uses Dropbox for file storage. In addition to uploading documents, users can also create lists of vocabulary words and review these lists in a matching game. The mactching game is implemented using HTML, CSS and the JQuery and JQuery UI JavaScript libraries.</p>
+			</div>
+		</div>
 
-	<section class="slideshow">
-	<ul>
-		{% for post in site.posts %}
-		<li>
-			<figure>
-				<a href="{{ post.github }}"><img src="{{ site.url }}/img/large/{{ post.photo }}" alt="img"/></a>
-				<figcaption class="fa fa-github-alt"><h3><a href="{{ post.github }}">{{ post.caption_header }}</a></h3><p>{{ post.description }}</p></figcaption>
-			</figure>
-		</li>
-		{% endfor %}
-	</ul>
-	<nav>
-		<span class="icon nav-prev"></span>
-		<span class="icon nav-next"></span>
-		<span class="icon nav-close"></span>
-	</nav>
-	<div class="info-keys icon">Navigate with arrow keys</div>
-	</section><!-- // slideshow -->
+		<div class="project-description">
+			<a href="http://noted-.herokuapp.com">
+				<h2>Noted</h2>
+			</a>
+			<div class="project-image">
+				<a href="http://noted-.herokuapp.com"><img src="img/noted_screenshot.png"></a>
+			</div>
+			<div class="project-explanation">
+				<p>Built on the Sinatra framework with an Angular.js front-end, Tourism leverages the Songkick and Spotify APIs to allow users to view a visual history of their favourite artist's tour history. Users can also save the setlist for each performance to their Spotify account.</p>
+			</div>
+		</div>
 
-	</div><!-- // grid-gallery -->
-</div>
-	<p class="attribution">Theme based on the <a href="https://github.com/nadjetey/GridGallery">Grid Gallery</a> Jekyll theme by Nii Adjetey Sowah</p>
+		<div class="project-description">
+			<a href="https://github.com/fooobar/profiles_app">
+				<h2>Profiles</h2>
+			</a>
+			<div class="project-image">
+				<a href="https://github.com/fooobar/profiles_app"><img src="img/profiles_screenshot.png"></a>
+			</div>
+			<div class="project-explanation">
+				<p>Profiles is a social network to connect alumni to potential employers. For this project I implemented the email notification system and contributed to the filtering system that is used on the employer and alumni search pages.</p>
+			</div>
+		</div>
+
+	</section>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

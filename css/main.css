@@ -1,0 +1,135 @@
+/*
+
+white: #FFF;
+gray: #AEAEAE;
+			#DADADA;
+pink: #E64C66;
+			#F89DAD
+dark blue: #2D3E50;
+sea foam green: #31BC9B;
+								#82E1C9
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Rock+Salt);
+@import url(https://fonts.googleapis.com/css?family=Belleza);
+
+/* html element overrides */
+
+body, html {
+  padding: 0;
+  font-family: 'Rock Salt', cursive;
+  color: #2D3E50;
+  height:100%;
+}
+
+
+a {
+	text-decoration: none;
+	color: #E64C66 ;
+	margin: 0;
+}
+
+a:hover {
+	color: #FFF;
+	
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	color: #E64C66;
+}
+
+a h2:hover {
+	cursor: url();
+	color: #FFF;
+}
+
+/* custom classes */
+
+.bio {
+	background-color: #82E1C9;
+}
+
+.projects {
+	background-color: #DADADA;
+	height: 100%;
+	margin: 0;
+	border: solid #DADADA 1px;
+}
+
+.bio-text {
+	text-align: center;
+	padding-top:15px;
+	padding-bottom: 15px;
+}
+
+.project-description {
+	text-align: center;
+	margin: 0;
+}
+
+.project-explanation {
+	font-family: 'Belleza', sans-serif;
+	text-align: left;
+	padding-top: 5px;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.project-image {
+	height: 300px;
+	width: 500px;
+	padding-bottom: 20px;
+	background-color: black;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 520px) {
+	.bio {
+		height: 150px;
+		font-size: 0.8em;
+	}
+
+	.bio-text {
+		padding-bottom: 0;
+	}
+
+	.projects {
+		overflow: scroll;
+	}
+	.project-description {
+		margin-left: 20px;
+	}
+	.project-explanation {
+		padding-top: 0;
+	}
+    .project-image {
+    	display: none;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+	.projects {
+		overflow: scroll;
+	}
+}
+
+
+@media only screen and (min-width: 1440px) {
+	.bio {
+		float:left;
+		height: 100%;
+		min-width: 29.25%;
+		display: inline-block;
+	}
+	.projects {
+		float: right;
+		min-width: 70.6%;
+		height: 100%;
+		overflow: scroll;
+	}
+}
