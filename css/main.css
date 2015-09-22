@@ -18,7 +18,7 @@ sea foam green: #31BC9B;
 
 body, html {
   padding: 0;
-  font-family: 'Rock Salt', cursive;
+  font-family: 'Rock Salt', Arial, Helvetica, sans-serif;
   color: #2D3E50;
   height:100%;
 }
@@ -117,7 +117,7 @@ a h2:hover {
 
 @media only screen and (min-width: 700px) {
 	.projects {
-		overflow: scroll;
+		overflow: auto;
 	}
 }
 
@@ -126,13 +126,13 @@ a h2:hover {
 	.bio {
 		float:left;
 		height: 100%;
-		min-width: 29%;
+		min-width: 29.25%;
 		display: inline-block;
 	}
 	.projects {
 		float: right;
-		min-width: 70%;
+		min-width: 70.6%;
 		height: 100%;
-		overflow: none;
+		overflow: auto;
 	}
 }
