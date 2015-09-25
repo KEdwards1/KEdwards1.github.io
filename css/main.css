@@ -101,6 +101,7 @@ a h2:hover {
 
 	.projects {
 		overflow: scroll;
+		-ms-overflow-style: -ms-autohiding-scrollbar;
 	}
 	.project-description {
 		margin-left: 20px;
@@ -135,5 +136,6 @@ a h2:hover {
 		min-width: 68%;
 		height: 100%;
 		overflow: auto;
+		-ms-overflow-style: -ms-autohiding-scrollbar;
 	}
 }
