@@ -22,6 +22,7 @@ body, html {
   color: #2D3E50;
   height:100%;
   background-color: #DADADA;
+  overflow: hidden;
 }
 
 
@@ -60,6 +61,8 @@ a h2:hover {
 	height: 100%;
 	margin: 0;
 	border: solid #DADADA 1px;
+	overflow: auto;
+	-ms-overflow-style: -ms-autohiding-scrollbar
 }
 
 .bio-text {
@@ -100,8 +103,8 @@ a h2:hover {
 	}
 
 	.projects {
-		overflow: scroll;
-		-ms-overflow-style: -ms-autohiding-scrollbar;
+		overflow: auto;
+		-ms-overflow-style: -ms-autohiding-scrollbar
 	}
 	.project-description {
 		margin-left: 20px;
@@ -120,6 +123,7 @@ a h2:hover {
 @media only screen and (min-width: 700px) {
 	.projects {
 		overflow: auto;
+		-ms-overflow-style: -ms-autohiding-scrollbar
 	}
 }
 
@@ -136,6 +140,6 @@ a h2:hover {
 		min-width: 68%;
 		height: 100%;
 		overflow: auto;
-		-ms-overflow-style: -ms-autohiding-scrollbar;
+		-ms-overflow-style: -ms-autohiding-scrollbar
 	}
 }
